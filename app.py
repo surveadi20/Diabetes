@@ -31,7 +31,7 @@ Age = st.number_input("Age", min_value=0.0, max_value=100.0, value=50.0, step=0.
 # Create the input dictionary for prediction
 input_data = {
     'Pregnancies': Pregnancies,
-    'Glucose': gender_map[Glucose],
+    'Glucose': Glucose,
     'BloodPressure': BloodPressure,
     'SkinThickness': SkinThickness,
     'Insulin': Insulin,
