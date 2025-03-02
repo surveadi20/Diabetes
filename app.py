@@ -18,17 +18,15 @@ def predict_Outcome(d):
 st.title(" diabetes Outcome Prediction")
 
 # Input fields for each parameter
-Pregnancies = st.number_input("Pregnancies",min_value=0.0, max_value=20,value=10.0, step=0.5)
-Glucose = st.number_input("Glucose",min_value=0.0, max_value=200,value=100.0, step=0.5)
+Pregnancies = st.number_input("Pregnancies",min_value=0.0, max_value=20.0,value=10.0, step=0.5)
+Glucose = st.number_input("Glucose",min_value=0.0, max_value=200.0,value=100.0, step=0.5)
 BloodPressure = st.number_input("BloodPressure",min_value=0.0, max_value=150.0,value=100.0, step=0.5)
 SkinThickness = st.number_input("SkinThickness",min_value=0.0, max_value=100.0,value=15.0, step=0.5)
-Insulin = st.number_input("Insulin",min_value=0.0, max_value=1000,value=79, step=0.5)
+Insulin = st.number_input("Insulin",min_value=0.0, max_value=1000.0,value=79.0, step=0.5)
 BMI = st.number_input("BMI",min_value=0.0, max_value=100.0,value=31.25, step=0.5)
-DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction",min_value=0.0, max_value=5,value=1.0, step=0.5)
+DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction",min_value=0.0, max_value=5.0,value=1.0, step=0.5)
 Age = st.number_input("Age", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
-# Map the gender and embarked values to numeric
-gender_map = {'male': 0, 'female': 1}
-embarked_map = {'S': 0, 'C': 1, 'Q': 2}
+
 
 # Create the input dictionary for prediction
 input_data = {
